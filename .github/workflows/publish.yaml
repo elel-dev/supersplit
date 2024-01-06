@@ -29,7 +29,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run Tests
+        run: npm test
+
       - name: Build package
+        if: success()
         run: npm run build
 
       - name: Create Release Pull Request or Publish
