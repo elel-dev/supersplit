@@ -31,6 +31,9 @@ jobs:
       - name: Build package
         run: npm run build
 
+      - name: Auth to npm
+        run: npm login
+
       - name: Create Release Pull Request or Publish
         id: changesets
         run: npm publish --access public
