@@ -10,6 +10,8 @@ You can install `ssplit` using npm:
 npm install ssplit
 ```
 
+## Usage
+
 ```typescript
 // Import the ssplit function
 import { ssplit } from "ssplit";
