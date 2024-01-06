@@ -28,9 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build package
+        run: npm ci
+
       - name: Create Release Pull Request or Publish
         id: changesets
-        run: npm ci
         run: npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
