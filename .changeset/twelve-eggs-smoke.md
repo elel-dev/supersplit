@@ -1,0 +1,5 @@
+---
+"splitter": patch
+---
+
+Fixed workflows
