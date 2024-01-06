@@ -1,6 +1,6 @@
 {
   "name": "@elel-dev/supersplit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple string splitting utility.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
