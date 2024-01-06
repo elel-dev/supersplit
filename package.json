@@ -1,5 +1,5 @@
 {
-  "name": "splitter",
+  "name": "supersplit",
   "version": "0.0.1",
   "description": "Simple string splitting utility.",
   "main": "dist/index.js",
