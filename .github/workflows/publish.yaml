@@ -30,7 +30,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish
         id: changesets
-        run: npm run build
+        run: npm ci
         run: npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
