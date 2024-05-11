@@ -22,4 +22,3 @@ const ssplit = (toSplit: string, chars: string[], indexes: number[]) => {
 };
 
 export default ssplit;
-module.exports = ssplit;
