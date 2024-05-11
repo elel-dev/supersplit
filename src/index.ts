@@ -21,4 +21,4 @@ const ssplit = (toSplit: string, chars: string[], indexes: number[]) => {
   return recursiveDivide(toSplit, chars, indexes);
 };
 
-export default ssplit;
+module.exports = ssplit;
