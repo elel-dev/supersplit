@@ -1,20 +1,20 @@
-# ssplit
+# supersplit 
 
-`ssplit` is a lightweight npm package that provides a simple string splitting functionality based on specified characters and indexes using recursion.
+`supersplit` is a lightweight npm package that provides a simple string splitting functionality based on specified characters and indexes using recursion.
 
 ## Installation
 
-You can install `ssplit` using npm:
+You can install `supersplit` using npm:
 
 ```bash
-npm install ssplit
+npm install @elel-dev/supersplit
 ```
 
 ## Usage
 
 ```typescript
 // Import the ssplit function
-import { ssplit } from "ssplit";
+import ssplit from "@elel-dev/supersplit";
 
 // Example usage:
 const inputString = "apple.apple.orange";
@@ -23,10 +23,8 @@ const indices = [1, 1];
 
 const result = ssplit(inputString, separators, indices);
 
-// Output:
-console.log("Input String:", inputString);
 console.log("Result:", result);
-// Output: orange
+// Result: orange
 ```
 
 ## API
@@ -43,13 +41,14 @@ Returns the result of recursively dividing the input string based on the specifi
 
 ```typescript
 // Example 1:
-const result1 = ssplit("apple.apple.orange", [",", ","], [1, 1]);
+const result1 = ssplit("apple.apple.orange", [".", "."], [1, 1]);
 console.log(result1);
 // Output: orange
 
 // Example 2:
-const result2 = ssplit("nope.this.nope", [",", ","], [1, 0]);
+const result2 = ssplit("nope.this.nope", [".", "."], [1, 0]);
 console.log(result2);
+// Output: this
 ```
 
 ## License
